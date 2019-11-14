@@ -1,0 +1,721 @@
+body {
+  margin: 0 auto;
+  padding-bottom: 60px;
+  max-width: 1800px;
+}
+a {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+.header {
+  max-width: 100vw;
+  text-align: center;
+  background-image: url(../img/header_background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 1000px;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+/* HEADER MENU */
+
+.header-menu,
+.header-menu_menu1,
+.header-menu_menu2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.header-menu {
+  padding: 30px 0;
+}
+
+.header-menu_menu1,
+.header-menu_menu2 {
+  width: 300px;
+}
+
+.menu1-item__link,
+.menu2-item__link {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  color: rgb(38, 39, 45);
+  line-height: 1.2;
+  text-align: left;
+  padding: 10px 15px;
+}
+.logo-link {
+  padding: 10px 15px;
+  color: rgb(38, 39, 45);
+  width: 140px;
+  height: 13px;
+  font-family: "Lato", sans-serif;
+}
+.blue-button {
+  background-color: rgb(38, 125, 244);
+  width: 140px;
+  height: 45px;
+  border-radius: 25px;
+  color: white;
+  text-align: right;
+  padding-right: 25px;
+  position: relative;
+  padding: 13px 20px;
+  font-family: "Varela Round", sans-serif;
+  border: none;
+}
+.blue-button:hover {
+  transform: scale(1.1);
+  transition: all 400ms linear;
+}
+
+.header-menu--btn::after {
+  position: absolute;
+  content: "";
+  width: 17px;
+  height: 21px;
+  background-image: url(../img/icons/apple_icon.png);
+  top: 0.7rem;
+  bottom: 0;
+  left: 20px;
+}
+
+.header-menu a:hover {
+  color: #9f9fa1;
+  transform: scale(1.1);
+  transition: all 400ms linear;
+}
+
+/* HEADER TEXT */
+
+.header-text {
+  display: block;
+  padding: 0;
+  margin: 0 auto;
+  font-size: 62px;
+  font-family: "Varela Round", sans-serif;
+  color: rgb(38, 39, 45);
+  text-align: center;
+  padding-top: 100px;
+}
+
+.header-text__des {
+  display: block;
+  padding: 0;
+  margin: 0 auto;
+  font-size: 20px;
+  font-family: "arial", sans-serif;
+  color: rgb(140, 143, 148);
+  line-height: 1.4;
+  text-align: center;
+  width: 830px;
+  padding-top: 50px;
+  margin-bottom: 70px;
+}
+
+.transparent-button {
+  background-color: transparent;
+  margin: 0 auto;
+  border-width: 1px;
+  border-color: rgb(140, 143, 148);
+  border-style: solid;
+  border-radius: 25px;
+  width: fit-content;
+  height: 45px;
+  font-size: 16px;
+  font-family: "Lato";
+  color: rgb(140, 143, 148);
+  line-height: 1.2;
+  text-align: center;
+  padding: 12px 45px;
+  font-family: "Varela Round", sans-serif;
+  cursor: pointer;
+}
+.header-button_video {
+  position: relative;
+}
+
+.header-button_video::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-image: url(../img/icons/play_icon.png);
+  left: 25px;
+  top: 18px;
+}
+.transparent-button:hover {
+  transform: scale(1.05);
+  transition: all 200ms linear;
+  color: white;
+  background-color: rgb(199, 199, 199);
+}
+
+/* FEATURES */
+
+.feature-wrapper {
+  min-height: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.feature-card {
+  width: 43%;
+  position: relative;
+}
+.feature-title {
+  font-size: 26px;
+  font-family: "Lato";
+  color: rgb(38, 39, 45);
+  line-height: 1.308;
+  text-align: left;
+}
+
+.feature-description {
+  font-size: 18px;
+  font-family: "Lato";
+  color: rgb(140, 143, 148);
+  line-height: 1.444;
+  text-align: left;
+}
+.feature-card::before {
+  content: "";
+  position: absolute;
+  height: 50px;
+  width: 45px;
+  left: 0;
+  top: -60px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.feature-card--feature1::before {
+  background-image: url(../img/lock_icon.svg);
+}
+.feature-card--feature2::before {
+  background-image: url(../img/clock_icon.svg);
+}
+
+/* IPHONE_FEATURE SECTION */
+
+.map-feature {
+  height: 800px;
+}
+
+.iphone-feature {
+  height: 900px;
+  background-image: url(../img/iPhone_6.png);
+  background-repeat: no-repeat;
+  background-size: initial;
+  padding-top: 150px;
+}
+
+.iphone-feature-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.iphone-feature__feature-card {
+  width: 470px;
+}
+.section-title {
+  font-size: 42px;
+  font-family: "Varela Round";
+  color: rgb(38, 39, 45);
+  line-height: 1.238;
+}
+
+.feature-sec--btn {
+  display: inline-block;
+  text-align: center;
+  width: 40%;
+  margin-right: 2rem;
+}
+
+/* MAP FEATURE  */
+
+.sponsors-title {
+  padding: 0;
+  font-size: 12px;
+  font-family: "Lato";
+  color: rgb(38, 39, 45);
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.833;
+  margin: 30px 0;
+}
+.partners-logo {
+  margin-right: 20px;
+}
+.map-feature {
+  background-image: url(../img/world-map.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+/* IPHONE SCREENS SECTION */
+
+.iphone-screens-title {
+  padding: 145px 0 90px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.iphone-screens-title::after {
+  position: absolute;
+  content: "";
+  background-color: rgb(38, 125, 244);
+  width: 50px;
+  height: 2px;
+  right: calc(50% - 25px);
+  bottom: 45px;
+}
+
+.iphone-screens {
+  background-color: rgb(245, 245, 248);
+  height: 1200px;
+  background-image: url(../img/screens.png);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-size: 100%;
+}
+
+.title-caption {
+  margin: 0 auto;
+  font-size: 12px;
+  font-family: "Lato";
+  color: rgb(140, 143, 148);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.833;
+  text-align: center;
+}
+
+/* READY TO BUY SECTION */
+
+.ready-to-buy-wrapper {
+  padding-top: 60px;
+  text-align: center;
+}
+.ready-to-buy {
+  background-color: rgb(245, 245, 248);
+  height: 500px;
+}
+.ready-to-buy__section-title {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  padding: 30px;
+}
+
+.ready-to-buy__form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 500px;
+  border-width: 1px;
+  border-color: rgb(155, 155, 155);
+  border-style: solid;
+  border-radius: 24px;
+  outline: none;
+  padding: 0 2px;
+  margin-bottom: 60px;
+  margin-top: 35px;
+}
+
+.ready-to-buy__form__input {
+  width: 335px;
+  height: 48px;
+  padding-left: 15px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.ready-to-buy__btn {
+  border: none;
+  border-radius: 21px;
+  background-color: rgb(111, 199, 84);
+  width: 160px;
+  height: 42px;
+  font-size: 16px;
+  font-family: "Lato";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  outline: none;
+}
+
+.ready-to-buy__btn:hover {
+  transform: scale(1.03);
+  transition: all 400ms linear;
+  background-color: rgb(161, 218, 144);
+  cursor: pointer;
+}
+
+.black-appstore-btn {
+  padding: 30px;
+}
+
+/* CUSTOMERS */
+
+.customers-wrapper {
+  height: 755px;
+  padding: 75px 0;
+  text-align: center;
+}
+.customers__banner {
+  width: 100%;
+  height: 260px;
+  background-image: url(../img/userpics.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.customers__banner:before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 42px;
+  background-image: url(../img/icons/Arrow-left.png);
+  left: 25px;
+  top: calc(50% - 60px);
+}
+.customers__banner:after {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 42px;
+  background-image: url(../img/icons/Arrow-right.png);
+  right: 25px;
+  top: calc(50% - 60px);
+}
+
+.customer-feedback-title {
+  font-size: 32px;
+  font-family: "Lato";
+  color: rgb(38, 39, 45);
+  line-height: 1.188;
+  text-align: center;
+  width: 458px;
+  height: 30px;
+}
+
+.feedback {
+  margin: 0 auto;
+  padding: 55px 0;
+  font-size: 20px;
+  font-family: "Lato";
+  color: rgb(140, 143, 148);
+  line-height: 1.4;
+  width: 554px;
+}
+.rating {
+  margin: 0 auto;
+  background-image: url(../img/icons/Stars.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 25%;
+  height: 25px;
+}
+
+.customers-name {
+  display: block;
+  padding: 65px 0;
+  font-size: 12px;
+  font-family: "Lato";
+  color: rgb(38, 39, 45);
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.833;
+  text-align: center;
+}
+
+/* PLAN */
+
+.plan {
+  background-color: #f4f4f5;
+  height: 900px;
+  padding: 160px 0;
+}
+
+.sponsors-title {
+  font-size: 12px;
+  font-family: "Lato";
+  color: rgb(38, 39, 45);
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.833;
+  text-align: left;
+}
+.selector-plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 258px;
+  border-width: 1px;
+  border-color: rgb(155, 155, 155);
+  border-style: solid;
+  border-radius: 25px;
+  outline: none;
+  padding: 0 2px;
+  height: 50px;
+}
+.selector-button {
+  border: none;
+  border-radius: 21px;
+  background-color: transparent;
+  width: 150px;
+  height: 42px;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+  line-height: 1.2;
+  outline: none;
+  font-size: 16px;
+  color: rgba(38, 41, 44, 0.4);
+}
+.selector-button:hover {
+  color: black;
+  font-weight: 900;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 20px 0px rgba(61, 61, 62, 0.15),
+    0px 30px 50px 0px rgba(92, 95, 101, 0.28);
+  transition: all 400ms linear;
+}
+.plan-description {
+  width: 370px;
+}
+
+.plan-help {
+  font-size: 14px;
+  font-family: "Lato";
+  color: rgb(140, 143, 148);
+  line-height: 1.714;
+  text-align: left;
+}
+
+.plan-help__link {
+  display: inline;
+  padding-left: 0.5em;
+}
+.plan-wrapper {
+  position: relative;
+}
+.plan-card_area {
+  position: absolute;
+  display: flex;
+  top: 0;
+  right: 0;
+  text-align: right;
+  justify-content: space-between;
+  width: 700px;
+}
+.plan-card {
+  width: 340px;
+  height: 510px;
+  text-align: center;
+  background-color: #ebebed;
+  position: relative;
+}
+.plan-card:hover {
+  transform: scale(1.1);
+  z-index: 10;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 30px 50px 0px rgba(92, 95, 101, 0.2);
+}
+
+.plan-card__title {
+  font-size: 32px;
+  font-family: "Lato";
+  color: rgb(38, 39, 45);
+  line-height: 1.188;
+  text-align: center;
+}
+.price {
+  margin: 0 auto;
+  font-size: 11px;
+  font-family: "Lato";
+  color: rgb(38, 39, 45);
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 2;
+  text-align: center;
+  border-width: 1px;
+  border-color: rgb(38, 41, 44);
+  border-style: solid;
+  border-radius: 13px;
+  opacity: 0.2;
+  width: 61px;
+  height: 26px;
+}
+.plan-card-desc {
+  margin: 30px auto;
+  font-size: 20px;
+  font-family: "Lato";
+  color: rgb(140, 143, 148);
+  line-height: 1.4;
+  text-align: center;
+  width: 200px;
+}
+.plan-card-feature {
+  display: block;
+  font-size: 16px;
+  font-family: "Lato";
+  color: rgb(38, 41, 44);
+  line-height: 1.5;
+  text-align: center;
+  margin: 20px auto;
+  font-weight: 900;
+}
+
+.plan-card-feature:before {
+  content: "\2713";
+  display: inline-block;
+  color: rgb(0, 255, 21);
+  padding: 0 6px 0 0;
+}
+.plan-btn {
+  border-color: #267df4;
+  color: #267df4;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  position: center;
+}
+
+.plan-btn:hover {
+  background-color: #267df4;
+  color: #f4f4f5;
+}
+
+/* SUBSCRIBE */
+.subscribe-wrapper {
+  text-align: center;
+  padding-top: 90px;
+}
+.subscribe__form {
+  width: 570px;
+}
+.ready-to-buy__form__input::placeholder {
+  font-family: sans-serif;
+}
+
+.ready-to-buy__form__input:focus::placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: transparent;
+}
+
+/* Footer */
+
+.footer-wrapper {
+  padding-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  height: 400px;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 20%;
+  height: 300px;
+  text-align: left;
+  padding-top: 20px;
+}
+
+.footer-contact-text {
+  font-size: 14px;
+  font-family: "Lato";
+  color: rgb(140, 143, 148);
+  line-height: 1.714;
+  text-align: left;
+  width: 245px;
+}
+.socials-list {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.footer-logo {
+  margin: 0;
+  padding: 0;
+}
+.footer-site-map{
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+}
+
+.site-map__column-title {
+  font-size: 12px;
+  font-family: "Lato";
+  color: rgb(38, 39, 45);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.833;
+  text-align: left;
+}
+.site-map-link {
+  font-size: 16px;
+  font-family: "Lato";
+  color: rgb(140, 143, 148);
+  line-height: 2.25;
+  text-align: left;
+}
+
+.site-map-col{
+  margin: 0; padding: 0;
+}
+.copyrights{
+  padding-top: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.copyright-link{
+  display: inline-block;
+}
+
+.cr-link
+ {
+  font-size: 14px;
+  font-family: 'Lato';
+  color: rgb(140, 143, 148);
+  line-height: 1.714;
+  
+ }
+
+ .cr-logo {
+   width: 18%;
+  font-size: 9px;
+  font-family: "Lato";
+  color: rgb(38, 39, 45);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 2.444;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
